@@ -1,0 +1,64 @@
+@import "./modules/vars";
+
+// font import
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: $bg;
+}
+
+.row {
+
+    .columns{
+
+        display: flex;
+        flex-direction: column;
+        // background: rgb(0, 255, 13);
+        width: 65%;
+
+        p:nth-child(1){
+            font-family: 'Montserrat', sans-serif;
+            font-size: 65px;
+            color: $text-primary;
+        }
+        
+        .line{
+            width: 26%;
+            height: 10px;
+            background: $primary;
+            margin-bottom: 40px;
+        }
+    
+        p:nth-child(3){
+            font-family: 'Merriweather', serif;
+            font-size: 20px;
+            color: $text-primary;
+        }
+    }
+}
+
+// button
+.button{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    background: $primary;
+}
+
+.button:hover{
+    background: #ff001e;
+}
+
+input[type="email"]::placeholder, label select{
+    font-size: 16px;
+    color: $lightgray;
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+    padding: 0 20px;
+}
