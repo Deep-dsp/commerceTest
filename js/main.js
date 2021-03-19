@@ -4,12 +4,17 @@ $(document).ready(function(){
         console.log("button clicked");
 
         var email = $("input").val();
-        
+        var drop = $("select").val();
+
         // Validation
         if(!email || email.indexOf("@") < 0 || email.indexOf(".") < 0){
             console.log("Please enter valid email address");
             $("small.error").addClass("errorshow");
             $("input").addClass("error-outline");
+
+            // Before Validation
+            console.log("input email:(before)", email);
+            console.log("Drop Down Value:(before)", drop);
 
             // Hide error class- red outline when user type
             $("input").on('keydown', function () {
@@ -20,7 +25,8 @@ $(document).ready(function(){
         // Else runs if validation is successful
         else{
             // console log entered value
-            console.log(email);
+            console.log("input email:", email);
+            console.log("Drop Down Value:", drop);
 
             $("a").replaceWith('<a href="#" class="button expanded">Submitting...</a>');
 

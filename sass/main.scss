@@ -19,16 +19,13 @@ main{
 }
 
 .row {
-
-    // width: 80%
-    .columns .title-box{
-
+    .grid-container .grid-x .title-box{
         display: flex;
         flex-direction: column;
         background: none;
-        // background-color: red;
 
-        width: 75%;
+        width: 100%;
+        // margin: auto;
         // padding-left: 50px;
 
         p:nth-child(1){
@@ -108,9 +105,9 @@ input[type="email"]::placeholder, label select{
 
 // Thank you template Styling
 .thankyou{
-    .columns{
+    .grid-container .grid-x .thankdetail{  
         color: #fff;
-        width: 60%;
+        width: 100%;
         p:nth-child(1){
             font-family: 'Montserrat', sans-serif;
             font-size: 35px;
