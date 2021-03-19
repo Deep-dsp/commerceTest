@@ -11,12 +11,14 @@
 <body>
     <main>
         <div class="row">
-            <div class="columns large-8 medium-8 large-offset-2 medium-offset-2 title-box">
-                <p>INTERNSHIP SIGN UP FORM</p>
-                <div class="line"></div>
-                <p>Prepare for your career path with a Project Management, Web-Development, Graphic design, or  
-                    Digital Marketing Internship at Northern.
-                </p>
+            <div class="columns large-5 medium-5 large-offset-2 medium-offset-2">
+                <div class="title-box">
+                    <p>INTERNSHIP SIGN UP FORM</p>
+                    <div class="line"></div>
+                    <p class="dataform">Prepare for your career path with a Project Management, Web-Development, Graphic design, or  
+                        Digital Marketing Internship at Northern.
+                    </p>
+                </div>
             </div>
             
             <form>
@@ -24,11 +26,13 @@
                     <div class="grid-x grid-padding-x">
                         <div class="medium-6 cell">
                             <label>
-                                <input type="email" placeholder="your email address*">
+                                <small class="error">Please enter valid email address</small>
+                                <input class="input-email" type="email" placeholder="your email address*" required>
                             </label>
                         </div>
                         <div class="medium-6 cell">
                             <label>
+                                <small class="invisible">jsd</small>
                                 <select>
                                     <option value="Your Interest">Your Interest</option>
                                     <option value="Development">Development</option>
@@ -39,11 +43,22 @@
                         </div>
                     </div>
                     <div class="btn-section">
-                        <a href="about.html" class="button expanded">Sign Up Now &#9656;</a>
+                        <a href="#" class="button expanded">Sign Up Now &#9656;</a>
                     </div>
                 </div>
             </form>
         </div>
+        <div class="row thankyou">
+            <div class="columns large-5 medium-5 large-offset-2 medium-offset-2">
+                <p>Thank you for your interest!</p>
+                <p>We will review your application and contact you for additional
+                    information should your background and experience meet the requirement
+                    of one of our opening.
+                </p>
+            </div>
+        </div>
     </main>
+    <script defer type="module" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 </body>
 </html>
