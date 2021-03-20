@@ -176,6 +176,16 @@ input[type="email"]::placeholder, label select{
                     font-size: 16px;
                 }
             }
+
+            .grid-x .thankdetail{
+                p:nth-child(1){
+                    font-size:25px;
+                }
+                
+                p:nth-child(2){
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
@@ -185,7 +195,6 @@ input[type="email"]::placeholder, label select{
         padding: 0 20px;
         .grid-container{
             .grid-x .title-box{
-                text-align: center;
                 p:nth-child(1){
                     font-size: 25px;
                 }
@@ -196,6 +205,17 @@ input[type="email"]::placeholder, label select{
                 }
 
                 p:nth-child(3){
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+
+            .grid-x .thankdetail{
+                p:nth-child(1){
+                    font-size:20px;
+                }
+                
+                p:nth-child(2){
                     font-size: 14px;
                 }
             }
