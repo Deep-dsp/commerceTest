@@ -1,0 +1,228 @@
+@import "./modules/vars";
+
+// font import
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: $bg;
+}
+main{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+}
+
+.row {
+    .grid-container .grid-x .title-box{
+        display: flex;
+        flex-direction: column;
+        background: none;
+
+        width: 100%;
+        // margin: auto;
+        // padding-left: 50px;
+
+        p:nth-child(1){
+            font-family: 'Montserrat', sans-serif;
+            font-size: 65px;
+            color: $text-primary;
+        }
+        
+        .line{
+            width: 26%;
+            height: 10px;
+            background: $primary;
+            margin-bottom: 40px;
+        }
+    
+        p:nth-child(3){
+            font-family: 'Merriweather', serif;
+            font-size: 20px;
+            color: $text-primary;
+        }
+    }
+}
+
+// button
+.button::before{
+    background: initial;
+}
+
+.button{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px; 
+    background: $primary;
+}
+
+.button:hover{
+    background: #ff001e;
+}
+
+label select option{
+    background-color: #fff;
+}
+
+input[type="email"]::placeholder, label select{
+    font-size: 16px;
+    color: $lightgray;
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+    padding: 0 20px;
+}
+
+.error{
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+    color: $lightgray;
+    padding: 2px 0;
+    float: right;
+    visibility: hidden;
+}
+
+.errorshow{
+    visibility: visible;
+}
+
+.form-hidden{
+    display: none;
+}
+
+.thankyou{
+    display: none;
+}
+
+.thankshow{
+    display: block;
+}
+// Input border email -> on border
+
+.error-outline{
+    outline: 3px solid $primary;  
+}
+
+// Thank you template Styling
+.thankyou{
+    .grid-container .grid-x .thankdetail{  
+        color: #fff;
+        width: 100%;
+        p:nth-child(1){
+            font-family: 'Montserrat', sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        p:nth-child(2){
+            font-family: 'Merriweather', serif;
+            font-size: 20px;
+            font-weight:normal
+        }
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .row{
+        padding: 0 20px;
+        .grid-container{
+            .grid-x .title-box{
+                p:nth-child(1){
+                    font-size: 60px;
+                }
+
+
+                p:nth-child(3){
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:944px){
+    .row{
+        padding: 0 20px;
+        .grid-container{
+            .grid-x .title-box{
+                p:nth-child(1){
+                    font-size: 45px;
+                }
+
+
+                p:nth-child(3){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:725px){
+    .row{
+        padding: 0 20px;
+        .grid-container{
+            .grid-x .title-box{
+                p:nth-child(1){
+                    font-size: 30px;
+                }
+
+                .line{
+                    width: 21%;
+                    height: 3px;
+                }
+
+                p:nth-child(3){
+                    font-size: 16px;
+                }
+            }
+
+            .grid-x .thankdetail{
+                p:nth-child(1){
+                    font-size:25px;
+                }
+                
+                p:nth-child(2){
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:497px){
+    .row{
+        padding: 0 20px;
+        .grid-container{
+            .grid-x .title-box{
+                p:nth-child(1){
+                    font-size: 25px;
+                }
+
+                .line{
+                    width: 30%;
+                    height: 3px;
+                }
+
+                p:nth-child(3){
+                    // text-align: center;
+                    font-size: 14px;
+                }
+            }
+
+            .grid-x .thankdetail{
+                p:nth-child(1){
+                    font-size:20px;
+                }
+                
+                p:nth-child(2){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
