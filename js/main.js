@@ -27,8 +27,10 @@ $(document).ready(function(){
             // console log entered value
             console.log("input email:", email);
             console.log("Drop Down Value:", drop);
-
-            $("span").replaceWith('<span class="button expanded">Submitting...</span>');
+            // $("span").replaceWith('<span class="button expanded disabled">Submitting...</span>');
+            $("span").text(function(){
+                return "Submitting...";
+            });
 
             setTimeout(function(){
                 $("form").addClass("form-hidden");
