@@ -50,8 +50,8 @@ main{
 }
 
 // button
-.button::before{
-    background: initial;
+.button::before, .button::after{
+    background-color: none;
 }
 
 .button{
@@ -75,6 +75,10 @@ span.restricted{
 
 label select option{
     background-color: #fff;
+}
+
+input[type="email"], label select{
+    height: 55px;
 }
 
 input[type="email"]::placeholder, label select{

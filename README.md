@@ -1,4 +1,4 @@
-# Application From - Practice
+# Application From - Northern Challenge
 
 ## Build with 
 * **HTML5**
@@ -15,12 +15,9 @@
 5. Submit a pull request :D
 
 ## Getting Started
-This is a basic HTML with Flex box and Grid layout using foundation framework. Some SASS, transitions and JavaScript function.
+This is a basic application form build with foundation framework and jQuery. Some SASS, transitions and JavaScript function.
 
 Clone this to the location of your choice, open in your favourite editor and hack away!
 
-## Author
-* Deepkumar Patel(0953510)
-
-## License
-MIT
+## Applicant Name
+* Deepkumar Patel
