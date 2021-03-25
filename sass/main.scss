@@ -1,6 +1,12 @@
+  
+//   Author:   Deepkumar Patel
+//   Purpose:  Northern Frontend Challenge
+
+
+// Import Vars Where color value is defined
 @import "./modules/vars";
 
-// font import
+// Import Fonts
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&display=swap');
 
@@ -12,12 +18,14 @@
 
     background-color: $bg;
 }
+
 main{
     position: absolute;
     width: 100%;
     top: 20%;
 }
 
+// Internship title/write up styling
 .row {
     .grid-container .grid-x .title-box{
         display: flex;
@@ -61,6 +69,10 @@ main{
     background: $primary;
 }
 
+.button:hover{
+    background: #ff001e;
+}
+
 span.restricted{
     font-family: 'Merriweather', serif;
     font-weight: bold;
@@ -69,9 +81,6 @@ span.restricted{
     text-align: center;
 }
 
-.button:hover{
-    background: #ff001e;
-}
 
 label select option{
     background-color: #fff;
